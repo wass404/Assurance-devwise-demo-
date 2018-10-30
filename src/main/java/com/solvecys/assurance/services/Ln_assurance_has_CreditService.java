@@ -11,8 +11,8 @@ public class Ln_assurance_has_CreditService {
 	@Autowired
 	private Ln_assurance_has_CreditRepository assurance_has_CreditRepository;
 	
-	public void create(Ln_assurance_has_Credit ln_assurance_has_Credit) {
-		assurance_has_CreditRepository.save(ln_assurance_has_Credit);
+	public Ln_assurance_has_Credit create(Ln_assurance_has_Credit ln_assurance_has_Credit) {
+		return assurance_has_CreditRepository.save(ln_assurance_has_Credit);
 	}
 }
 

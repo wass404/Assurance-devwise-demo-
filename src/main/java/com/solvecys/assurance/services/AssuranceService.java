@@ -17,9 +17,10 @@ public class AssuranceService {
 	private LnAssuranceRepository lnAssuranceRepository;
 	
 
-	public void create(LnAssurance lnAssurance) {
+	public LnAssurance create(LnAssurance lnAssurance) {
 
-		lnAssuranceRepository.save(lnAssurance);
+		return lnAssuranceRepository.save(lnAssurance);
+
 	}
 
 	public List<LnAssurance> findAll() {
